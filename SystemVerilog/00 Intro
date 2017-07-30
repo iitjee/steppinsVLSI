@@ -1,0 +1,19 @@
+SystemVerilog is a significant new enhancement to Verilog and includes major exten- sions into abstract design, testbench, 
+formal, and C-based APls. SystemVerilog also defines new layers in the Verilog simulation strata. These extensions provide 
+signifi- cant new capabilities to the designer, verification engineer and architect, allowing better teamwork and co-
+ordination between different project members. As was the case with the original Verilog, teams who adopt SystemVerilog based 
+tools will be more productive and produce better quality designs in shorter periods .
+
+
+A strong guiding requirement for SystemVerilog is that it should be a true superset of Verilog, and as new tools become available, I believe all Verilog users, and many users of other HDLs, will naturally adopt it.
+
+If you are a designer or architect building digital systems, or a verification engineer searching for bugs in these designs, then SystemVerilog will provide you with signif- icant benefits, and this book is a great place to start to learn SystemVerilog and the future ofHardware Design and Verification Languages. :)
+
+SystemVerilog is a standard set of extensions to the IEEE Std. 1364-2001 Verilog Standard (commonly referred to as "Verllog  2001" . 
+
+
+
+
+
+
+
