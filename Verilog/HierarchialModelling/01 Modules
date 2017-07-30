@@ -1,0 +1,50 @@
+A module is the basic building block in Verilog. 
+A module can be an element or a collection of lower-level design blocks.
+
+        module <module-name> (<module-terminal-list>) ;
+        ...
+        <moduleinternals ...
+        ...
+        endmodule
+        
+Verilog is both a behavioral and a structural language. Internals of each module can be defined at four levels of abstraction, 
+depending on the needs of the design.
+
+The levels are defined below.
+- Behavioral or algorithmic level
+      This is the highest level of abstraction provided by Verilog HDL. A module
+  can be implemented in terms of the desired design algorithm without concern for the hardware implementation details.      
+  Designing at this level is very similar to C programming.
+
+- Dataflow level
+    At this level the module is designed by specifying the data flow. The
+  designer is aware of how data flows between hardware registers and how the data is processed in the design.
+
+- Gate level
+    The module is implemented in terms of logic gates and interconnections
+  between these gates. Design at this level is similar to describing a design in terms of a gate-level logic diagram.
+
+- Switch level
+    This is the lowest level of abstraction provided by Verilog. A module can be
+  implemented in terms of switches, storage nodes, and the interconnections between them. Design at this level requires 
+  knowledge of switch-level implementation details.
+
+
+
+
+
+Verilog allows the designer to mix and match all four levels of abstractions in a design. In the digital design community, 
+the term register transfer level (RTL)is frequently used for a Verilog description that uses a combination of behavioral and 
+dataflow constructs and is acceptable to logic synthesis tools.
+
+
+If a design contains four modules, Verilog allows each of the modules to be written at a different level of abstraction. As 
+the design matures, most modules are replaced with gate-level implementations.
+
+Normally, the higher the level of abstraction, the more flexible and technology independent the design. As one goes lower 
+toward switch-level design, the design becomes technology dependent and inflexible. A small modification can cause a 
+significant number of changes in the design. Consider the analogy with C programming and assembly language programming. It 
+is easier to program in a higher-level language such as C. The program can be easily ported to any machine. However, if you 
+design at the assembly level, the program is specific for that machine and cannot be easily ported to another machine.
+
+
