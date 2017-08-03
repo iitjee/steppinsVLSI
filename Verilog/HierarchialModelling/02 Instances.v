@@ -38,4 +38,6 @@ Testing:
     stimulus block.(aka test bench).Different test benches can be used to thoroughly test the design block.
 
 Two styles of stimulus application are in usage:
+     In the first style, the stimulus block instantiates the design block and directly drives the signals in the design block. 
+    
     
