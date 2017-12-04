@@ -59,7 +59,20 @@ void addafter(int num, int loc)
 }
  
  
- 
+ int count()
+{
+    struct node *n;
+    int c=0;
+    n=head;
+    while(n!=NULL)
+    {
+    n=n->next;
+    c++;
+    }
+    return c;
+}
+ 
+
 void insert(int num)
 {
     int c=0;
@@ -132,20 +145,6 @@ void  display(struct node *r)
     r=r->next;
     }
     printf("\n");
-}
- 
- 
-int count()
-{
-    struct node *n;
-    int c=0;
-    n=head;
-    while(n!=NULL)
-    {
-    n=n->next;
-    c++;
-    }
-    return c;
 }
  
  
